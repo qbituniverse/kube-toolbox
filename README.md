@@ -19,9 +19,7 @@ All resources in **kube-toolbox** are free, public and constantly updated with f
 ## Usage
 
 ```
-kubectl run -i -t kube-tollbox --image=qbituniverse/kube-toolbox --restart=Never
-
-kubectl exec -it kube-tollbox -- /bin/bash
+kubectl run -it --rm kube-toolbox --image=qbituniverse/kube-toolbox
 ```
 
 ## Links
