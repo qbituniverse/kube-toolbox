@@ -1,3 +1,5 @@
 FROM    busybox:latest
 LABEL   description="Image containing kube-toolbox" \
         maintainer="marcin.narloch@qbituniverse.com"
+
+RUN     apt-get update && apt-get install -y curl
