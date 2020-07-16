@@ -19,7 +19,7 @@ All resources in **kube-toolbox** are free, public and constantly updated with f
 ## Usage
 
 ```
-kubectl run -it --rm kube-toolbox --image=qbituniverse/kube-toolbox
+kubectl run -it --rm kube-toolbox --image=qbituniverse/kube-toolbox --generator=run-pod/v1
 ```
 
 ## Links
