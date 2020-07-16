@@ -1,0 +1,17 @@
+pool:
+  name: Hosted Ubuntu 1604
+
+trigger:
+- master
+
+pr: none
+
+steps:
+- task: Docker@2
+  displayName: buildAndPush
+  inputs:
+    containerRegistry: DockerHub
+    repository: qbituniverse/kube-toolbox
+    Dockerfile: '.cicd/docker/Dockerfile-kube-toolbox'
+    buildContext: ''
+    tags: latest

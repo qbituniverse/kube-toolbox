@@ -1,0 +1,3 @@
+FROM    busybox:latest
+LABEL   description="Image containing kube-toolbox" \
+        maintainer="marcin.narloch@qbituniverse.com"

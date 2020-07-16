@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# kube-toolbox
 
-You can use the [editor on GitHub](https://github.com/qbituniverse/kube-toolbox/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**kube-toolbox** is available on: [GitHub](https://github.com/qbituniverse/kube-toolbox) - [DockerHub](https://hub.docker.com/repository/docker/qbituniverse/kube-toolbox) - [Web](https://qbituniverse.com)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Description
 
-### Markdown
+**kube-toolbox** is full of useful tools which can be used to work with **Kubernetes** via *kubectl* command.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+All resources in **kube-toolbox** are free, public and constantly updated with functionality.
 
-```markdown
-Syntax highlighted code block
+## Base Image
 
-# Header 1
-## Header 2
-### Header 3
+**kube-toolbox** is based on *busybox* base image. More info here on [DockerHub](https://hub.docker.com/_/busybox).
 
-- Bulleted
-- List
+## Additional Tools
 
-1. Numbered
-2. List
+- TBC
 
-**Bold** and _Italic_ and `Code` text
+## Usage
 
-[Link](url) and ![Image](src)
+```
+kubectl run -i -t kube-tollbox --image=qbituniverse/kube-toolbox --restart=Never
+
+kubectl exec -it kube-tollbox -- /bin/bash
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Links
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/qbituniverse/kube-toolbox/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**kube-toolbox** is available on: [GitHub](https://github.com/qbituniverse/kube-toolbox) - [DockerHub](https://hub.docker.com/repository/docker/qbituniverse/kube-toolbox) - [Web](https://qbituniverse.com)
