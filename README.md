@@ -10,7 +10,7 @@ All resources in **kube-toolbox** are free, public and constantly updated with n
 
 # How to use it?
 
-## Run *kube-toolbox* Pod
+## Run *kube-toolbox* as Pod
 ```
 kubectl run kube-toolbox --image=qbituniverse/kube-toolbox --generator=run-pod/v1
 ```
@@ -18,6 +18,11 @@ kubectl run kube-toolbox --image=qbituniverse/kube-toolbox --generator=run-pod/v
 ## Exec into a running instance of *kube-toolbox* Pod
 ```
 kubectl exec -it kube-toolbox -- /bin/ash
+```
+
+## Expose *kube-toolbox* Pod as Service
+```
+kubectl expose pod kube-toolbox --port=80 --name=kube-toolbox
 ```
 
 # What's inside?
@@ -36,8 +41,8 @@ This is NodeJS Api running inside the Pod.
 
 ### Usage
 ```
-curl http://<POD NAME>/api/ping
-curl http://<POD IP>/api/ping
+curl http://<DNS>/api/ping
+curl http://<IP>/api/ping
 ```
 
 ### Examples
@@ -46,12 +51,25 @@ curl http://kube-toolbox/api/ping
 curl http://10.1.1.188/api/timestamp
 ```
 
+## nslookup
+Facility to check DNS entry.
+
+### Usage
+```
+nslookup <DNS>
+```
+
+### Examples
+```
+nslookup kube-toolbox
+```
+
 ## curl
 Facility to make HTTP calls from within the Pod.
 
 ### Usage
 ```
-curl http://URL
+curl http://<URL>
 ```
 
 ### Examples
