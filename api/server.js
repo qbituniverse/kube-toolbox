@@ -2,10 +2,7 @@
 
 const express = require("express");
 const app = express();
-const PORT = 80;
-const HOST = "0.0.0.0";
-
-const server = app.listen(PORT, HOST, () => {
+const server = app.listen(80, () => {
     var host = server.address().address;
     var port = server.address().port;
     console.log("Server running on http://" + host + ":" + port);
