@@ -1,5 +1,17 @@
-FROM    alpine:latest
+FROM    node:12-alpine
 LABEL   description="Image containing kube-toolbox" \
         maintainer="marcin.narloch@qbituniverse.com"
 
 RUN     apk update && apk add curl
+
+WORKDIR /usr/src/app
+
+COPY    api/package*.json ./
+
+RUN     npm install
+
+COPY    api .
+
+EXPOSE  80
+
+CMD     ["node", "server.js"]

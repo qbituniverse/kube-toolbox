@@ -14,7 +14,16 @@ All resources in **kube-toolbox** are free, public and constantly updated with f
 
 ## Additional Tools Installed
 
-- curl
+### api
+This is NodeJS Api running inside the Pod.
+|Port|Endpoint|Response|
+|---|---|---
+|80|/api/ping|Pong|
+|80|/api/ip|IP Address|
+|80|/api/timestamp|Local Date+Time in GMT|
+
+### curl
+Facility to make HTTP calls from within the Pod.
 
 ## Usage Scenarios
 
