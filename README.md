@@ -18,17 +18,17 @@ All resources in **kube-toolbox** are free, public and constantly updated with f
 
 ## Usage Scenarios
 
-### Run **kube-toolbox** and enter into it
+### Run *kube-toolbox* and enter into it
 ```
 kubectl run -it --rm kube-toolbox --image=qbituniverse/kube-toolbox --generator=run-pod/v1
 ```
 
-### Run **kube-toolbox** in the background
+### Run *kube-toolbox* in the background
 ```
 kubectl run kube-toolbox --image=qbituniverse/kube-toolbox --generator=run-pod/v1
 ```
 
-### Exec into a running instance of **kube-toolbox**
+### Exec into a running instance of *kube-toolbox*
 ```
 kubectl exec -it kube-toolbox -n default -- /bin/bash
 ```
