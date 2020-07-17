@@ -1,3 +1,5 @@
-FROM    busybox:latest
+FROM    alpine:latest
 LABEL   description="Image containing kube-toolbox" \
         maintainer="marcin.narloch@qbituniverse.com"
+
+RUN     apk update && apk add curl
