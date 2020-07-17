@@ -12,9 +12,9 @@ All resources in **kube-toolbox** are free, public and constantly updated with f
 
 **kube-toolbox** is based on *alpine* base image. More info here on [DockerHub](https://hub.docker.com/_/alpine).
 
-## Additional Tools
+## Additional Tools Installed
 
-- TBC
+- curl
 
 ## Usage Scenarios
 
