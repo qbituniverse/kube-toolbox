@@ -1,6 +1,6 @@
 # kube-toolbox
 
-**kube-toolbox** is available on: [GitHub](https://github.com/qbituniverse/kube-toolbox){:target="_blank"} - [DockerHub](https://hub.docker.com/repository/docker/qbituniverse/kube-toolbox){:target="_blank"} - [Web](https://qbituniverse.com){:target="_blank"}
+**kube-toolbox** is available on: <a href="https://github.com/qbituniverse/kube-toolbox" target="_blank">GitHub</a> - <a href="https://hub.docker.com/repository/docker/qbituniverse/kube-toolbox" target="_blank">DockerHub</a> - <a href="https://qbituniverse.com" target="_blank">QbitUniverse</a>
 
 # Description
 
@@ -77,5 +77,4 @@ whoami
 ```
 
 # Links
-
-**kube-toolbox** is available on: [GitHub](https://github.com/qbituniverse/kube-toolbox){:target="_blank"} - [DockerHub](https://hub.docker.com/repository/docker/qbituniverse/kube-toolbox){:target="_blank"} - [Web](https://qbituniverse.com){:target="_blank"}
+**kube-toolbox** is available on: <a href="https://github.com/qbituniverse/kube-toolbox" target="_blank">GitHub</a> - <a href="https://hub.docker.com/repository/docker/qbituniverse/kube-toolbox" target="_blank">DockerHub</a> - <a href="https://qbituniverse.com" target="_blank">QbitUniverse</a>
