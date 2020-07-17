@@ -10,16 +10,27 @@ All resources in **kube-toolbox** are free, public and constantly updated with f
 
 ## Base Image
 
-**kube-toolbox** is based on *busybox* base image. More info here on [DockerHub](https://hub.docker.com/_/busybox).
+**kube-toolbox** is based on *alpine* base image. More info here on [DockerHub](https://hub.docker.com/_/alpine).
 
 ## Additional Tools
 
 - TBC
 
-## Usage
+## Usage Scenarios
 
+### Run **kube-toolbox** and enter into it
 ```
 kubectl run -it --rm kube-toolbox --image=qbituniverse/kube-toolbox --generator=run-pod/v1
+```
+
+### Run **kube-toolbox** in the background
+```
+kubectl run kube-toolbox --image=qbituniverse/kube-toolbox --generator=run-pod/v1
+```
+
+### Exec into a running instance of **kube-toolbox**
+```
+kubectl exec -it kube-toolbox -n default -- /bin/bash
 ```
 
 ## Links
