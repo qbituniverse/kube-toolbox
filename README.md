@@ -27,19 +27,14 @@ Facility to make HTTP calls from within the Pod.
 
 ## Usage Scenarios
 
-### Run *kube-toolbox* and enter into it
-```
-kubectl run -it --rm kube-toolbox --image=qbituniverse/kube-toolbox --generator=run-pod/v1
-```
-
-### Run *kube-toolbox* in the background
+### Run *kube-toolbox* Pod
 ```
 kubectl run kube-toolbox --image=qbituniverse/kube-toolbox --generator=run-pod/v1
 ```
 
-### Exec into a running instance of *kube-toolbox*
+### Exec into a running instance of *kube-toolbox* Pod
 ```
-kubectl exec -it kube-toolbox -n default -- /bin/bash
+kubectl exec -it kube-toolbox -- /bin/ash
 ```
 
 ## Links
