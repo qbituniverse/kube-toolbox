@@ -1,6 +1,6 @@
 # kube-toolbox
 
-**kube-toolbox** is available on: [GitHub](https://github.com/qbituniverse/kube-toolbox) - [DockerHub](https://hub.docker.com/repository/docker/qbituniverse/kube-toolbox) - [Web](https://qbituniverse.com)
+**kube-toolbox** is available on: [GitHub](https://github.com/qbituniverse/kube-toolbox){:target="_blank"} - [DockerHub](https://hub.docker.com/repository/docker/qbituniverse/kube-toolbox){:target="_blank"} - [Web](https://qbituniverse.com){:target="_blank"}
 
 # Description
 
@@ -22,7 +22,7 @@ kubectl exec -it kube-toolbox -- /bin/ash
 
 # What's inside?
 
-**kube-toolbox** is based on *alpine* base image. More info here on [DockerHub](https://hub.docker.com/_/alpine).
+**kube-toolbox** is based on *alpine* base image. More info here on [DockerHub](https://hub.docker.com/_/alpine){:target="_blank"}.
 
 ## api
 
@@ -78,4 +78,4 @@ whoami
 
 # Links
 
-**kube-toolbox** is available on: [GitHub](https://github.com/qbituniverse/kube-toolbox) - [DockerHub](https://hub.docker.com/repository/docker/qbituniverse/kube-toolbox) - [Web](https://qbituniverse.com)
+**kube-toolbox** is available on: [GitHub](https://github.com/qbituniverse/kube-toolbox){:target="_blank"} - [DockerHub](https://hub.docker.com/repository/docker/qbituniverse/kube-toolbox){:target="_blank"} - [Web](https://qbituniverse.com){:target="_blank"}
