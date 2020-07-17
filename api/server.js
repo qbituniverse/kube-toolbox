@@ -3,26 +3,33 @@
 const express = require("express");
 const app = express();
 const PORT = 80;
-const HOST = '0.0.0.0';
+const HOST = "0.0.0.0";
+
+const server = app.listen(PORT, HOST, () => {
+    var host = server.address().address;
+    var port = server.address().port;
+    console.log("Server running on http://" + host + ":" + port);
+});
 
 app.get("/api/ping", (req, res) => {
     res.set('Content-Type', 'text/plain');
     res.send("pong");
 });
 
-app.get("/api/ip", (req, res) => {
+app.get("/api/client", (req, res) => {
     res.set('Content-Type', 'text/plain');
     res.send(getCallerIP(req));
+});
+
+app.get("/api/server", (req, res) => {
+    res.set('Content-Type', 'application/json');
+    res.send(server.address());
 });
 
 app.get("/api/timestamp", (req, res) => {
     res.set('Content-Type', 'text/plain');
     var date = new Date();
     res.send(date.toGMTString());
-});
-
-app.listen(PORT, HOST, () => {
-    console.log("Server running on port 80");
 });
 
 function getCallerIP(req) {

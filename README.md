@@ -25,6 +25,16 @@ kubectl exec -it kube-toolbox -- /bin/ash
 kubectl expose pod kube-toolbox --port=80 --name=kube-toolbox
 ```
 
+## Delete *kube-toolbox* Pod
+```
+kubectl delete pod kube-toolbox
+```
+
+## Delete *kube-toolbox* Service
+```
+kubectl delete svc kube-toolbox
+```
+
 # What's inside?
 
 **kube-toolbox** is based on *node alpine* base image.
@@ -35,9 +45,10 @@ This is NodeJS Api running inside the Pod.
 
 |Port|Endpoint|Response|
 |---|---|---
-|80|/api/ping|Pong|
-|80|/api/ip|IP Address|
-|80|/api/timestamp|Local Date+Time in GMT|
+|80|/api/ping|"pong"|
+|80|/api/client|Client Information|
+|80|/api/server|Server Information|
+|80|/api/timestamp|Local Date+Time in GMT Format|
 
 ### Usage
 ```
